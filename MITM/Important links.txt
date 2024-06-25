@@ -1,0 +1,3 @@
+https://www.fortinet.com/resources/cyberglossary/what-is-arp
+
+https://www.imperva.com/learn/application-security/arp-spoofing/

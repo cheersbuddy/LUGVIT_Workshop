@@ -1,0 +1,3 @@
+copy /b FrontFile.extension + BackFile.extension Output.Extension
+
+echo Your Message >> filename.extension

