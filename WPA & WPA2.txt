@@ -1,0 +1,7 @@
+For dictionary attack -:
+
+aircrack-ng -w DictionaryNameWithPath filename-01.cap
+
+For Brute force attack -:
+
+crunch 8 12 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 | aircrack-ng -b 00:11:22:33:44:55 -w- filename-01.cap

